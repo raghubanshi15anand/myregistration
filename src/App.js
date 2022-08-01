@@ -1,25 +1,39 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Form from "./Form"
+import Product from "./components/Product"
+import './components/Product.css'
+
+import {
+	BrowserRouter as Router,
+	Routes,
+	Route,
+  } from "react-router-dom";
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [submitted, setSubmitted] = useState(false);
+
+
+return (
+    <>
+	{submitted ?
+	 <Router>
+      <div>
+        <Routes>
+		<Route path='/' element={<Product/>} />
+        </Routes>
+      </div>
+    </Router>
+	: null }
+	<div className="App">
+	{!submitted ? 
+	<Form  submitted = {submitted} setSubmitted= {setSubmitted} />
+	: null }
+	</div>
+	</>
+);
 }
 
 export default App;
