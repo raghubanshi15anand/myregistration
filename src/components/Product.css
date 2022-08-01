@@ -1,12 +1,6 @@
-/* card {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background:url("https://images.samsung.com/is/image/samsung/assets/in/pfs/202205_update/Product-card-FT12_Galaxy-A53_MO.jpg?$FB_TYPE_J_F_MO_JPG$");
-    overflow: hidden;
-  } */
+.all-container{
+  width: 1410px;
+}
   .card {
     display: inline-grid;
     grid-template-columns: 300px;
@@ -128,15 +122,15 @@
     background: rgb(0, 189, 63);
   }
   .card-image.card4 {
-    background: url("https://st.depositphotos.com/1006899/3826/i/950/depositphotos_38266833-stock-photo-low-cost.jpg");
+    background: url("https://thumbs.dreamstime.com/b/phone-te-playground-photo-sony-dog-shy-nature-water-amazing-abstract-stars-night-clear-photography-beautiful-164586751.jpg");
     background-size: cover;
   }
   .card-image.card5 {
-    background: url("https://www.financialexpress.com/wp-content/uploads/2021/09/AI-Pic-620x400.jpg");
+    background: url("https://s3b.cashify.in/gpro/uploads/2022/04/14202749/Motorola-Moto-Edge-30-Pro-5G-1.jpg");
     background-size: cover;
   }
 
   .card-image.card6 {
-    background: url("https://www.allianzgi.com/-/media/allianzgi/shared/rebrand/capabilities/1920x980-activehero-capabilities-multi-asset.jpg?rev=99a20857d8b64890a8256c781abf9e23&hash=8DAF7BF44C6F79E3B51D405C604775ED");
+    background: url("https://cdn11.bigcommerce.com/s-pkla4xn3/images/stencil/608x608/attribute_rule_images/73112_source_1526543588.jpg");
     background-size: cover;
   }
